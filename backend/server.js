@@ -21,7 +21,7 @@ const app = express();
 connectMongoDB();
 
 // middleware
-app.use(express.json());    // to parse req.body
+app.use(express.json({ limit: "5mb" }));    // to parse req.body
 app.use(express.urlencoded({ extended:true }));     // to parse form data (urlencoded)
 app.use(cookieParser());
 
