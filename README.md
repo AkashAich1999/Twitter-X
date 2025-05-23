@@ -16,12 +16,16 @@ A full-stack MERN-based Twitter-X with authentication, posting, following, and m
 - Node.js
 - Cloudinary (for image upload)
 
-## Screenshots
+## Screenshots  
+### Sign Up  
+
 ![SignUpCredentials](https://github.com/user-attachments/assets/9a81349f-6db0-4a0f-9805-69effa17e90b)  
 
 ![AccountCreatedSuccessfully](https://github.com/user-attachments/assets/0b50c126-d255-4c1c-ad73-affbfccb0253)  
+### Log Out  
 
 ![Logout](https://github.com/user-attachments/assets/6ef2a8b1-1810-48d6-87f6-9ac434f1e5fb)  
+### Log In  
 
 ![LoginCredentials](https://github.com/user-attachments/assets/b6a21257-0f63-4bdb-a3b0-9b576b0b21e2)  
 
