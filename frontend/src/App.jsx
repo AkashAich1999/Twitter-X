@@ -10,8 +10,10 @@ import RightPanel from "./components/common/RightPanel.jsx";
 import { Toaster } from "react-hot-toast";
 import { useQuery } from "@tanstack/react-query";
 import LoadingSpinner from "./components/common/LoadingSpinner.jsx";
+import { useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
   const { data:authUser, isLoading } = useQuery({
     // we use queryKey to give a unique name to our query and refer to it later
     queryKey: ['authUser'],
@@ -43,11 +45,13 @@ function App() {
   }
 
   console.log(authUser);
+  const hideLayout = ['/login', '/signup'].includes(location.pathname);
 
   return (
     <div className="flex max-w-6xl mx-auto">
       {/* Common component, bc it's not wrapped with Routes */}
-      <Sidebar />
+      {/* Conditionally render Sidebar and RightPanel */}
+      {!hideLayout && <Sidebar />}
       <Routes>
         <Route path="/" element={authUser ? <HomePage /> : <Navigate to={"/login"} /> } />
         <Route path="/login" element={!authUser ? <LoginPage /> : <Navigate to={"/"} /> } />
@@ -55,7 +59,8 @@ function App() {
         <Route path="/notifications" element={authUser ? <NotificationPage /> : <Navigate to={"/login"} />} />
         <Route path="/profile/:username" element={authUser ? <ProfilePage /> : <Navigate to={"/login"} /> } />
       </Routes>
-      <RightPanel />
+      {/* Conditionally render RightPanel */}
+      {!hideLayout && <RightPanel />}
       <Toaster />
     </div>
   )
