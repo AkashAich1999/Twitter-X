@@ -31,6 +31,21 @@ A full-stack MERN-based Twitter-X with authentication, posting, following, and m
 
 ![PostCreatedSuccessfully](https://github.com/user-attachments/assets/09363fbc-f00d-4a67-8f22-a85b2d42209c)  
 
+![AnotherPost](https://github.com/user-attachments/assets/c23b7f31-23f9-45db-b1c2-63eaa0f6c6f8)  
+
+![CommentsOnPost](https://github.com/user-attachments/assets/95701b73-63e0-4f73-b18c-22d1ec3c2361)  
+
+![PostsOfFollowing](https://github.com/user-attachments/assets/fcc4a87e-fef4-4c68-9b36-c7319b628286)  
+
+![NotificationSection](https://github.com/user-attachments/assets/1101755c-91e8-49ad-943c-b79456535c41)  
+
+![ProfileSection](https://github.com/user-attachments/assets/5a765371-5e28-40a7-89ac-6104ffb07563)  
+
+
+
+
+
+
 
 
 
